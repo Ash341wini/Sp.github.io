@@ -8,7 +8,7 @@ import { Routes,Route, useLocation } from 'react-router-dom';
 import Gallery from '../pages/Gallery';
 import { AnimatePresence } from 'framer-motion';
 import AboutYash from '../pages/AboutYash';
-import About1 from '../pages/About1';
+
 
 const AnimRoutes = () => {
 
@@ -17,7 +17,7 @@ const AnimRoutes = () => {
    <AnimatePresence initial={true} mode='wait'> 
          <Routes key={location.pathname} Location={location}>
             <Route path='/' element={<Home/>} />
-            <Route path='about' element={<About1/>} />
+            <Route path='about' element={<About/>} />
             <Route path='portfolio' element={<Portfolio/>} />
             <Route path='contact' element={<Contact/>} />
             <Route path='gallery' element={<Gallery/>} />
